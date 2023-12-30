@@ -18,12 +18,12 @@ def maximizar_lucro(t, p, max_brinquedos, brinquedos, pacotes):
 
     # Restrições de capacidade total
     modelo += lpSum(x[i] for i in range(t)) <= max_brinquedos, "Capacidade_Total"
-
+              
     # Restrições de pacotes
     for j in range(p):
         # Verifica se a chave existe no dicionário antes de acessar
         if pacotes[j][:3] and all(i < t for i in pacotes[j][:3]):
-            modelo += lpSum(x[i] for i in pacotes[j][:3]) >= y[j], f"Brinquedos_Pacote_{j}"
+            modelo += lpSum(brinquedos[i][0] for i in pacotes[j][:3]) >= pacotes[j][3], f"Brinquedos_Pacote_{j}"
 
     # Resolve o modelo
     modelo.solve()
