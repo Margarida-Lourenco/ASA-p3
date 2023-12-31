@@ -17,6 +17,7 @@ python3 p3.py < input_file
 ```
 or if you want to run inputs from tests
 ```bash
-python3 p3.py < test/input_file
+python3 p3.py < test/inputs/input_file
 ```
 
+in tests/out you can check the correct answer for each case
