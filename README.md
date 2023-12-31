@@ -8,7 +8,7 @@ Calculates the daily maximum profit from selling wooden toys during Christmas ti
 
 Clone this repo
 ```bash
-git clone
+git clone https://github.com/Margarida-Lourenco/ASA-p3.git
 ```
 
 Followed by
