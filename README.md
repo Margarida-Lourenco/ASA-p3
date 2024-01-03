@@ -20,4 +20,4 @@ or if you want to run inputs from tests
 python3 p3.py < test/inputs/input_file
 ```
 
-in tests/out you can check the correct answer for each case. Same goes for testing paste.
+in tests/out you can check the correct answer for each case
