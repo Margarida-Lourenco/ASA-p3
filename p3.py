@@ -10,7 +10,6 @@ def maximizar_lucro(t, p, max_brinquedos, brinquedos, pacotes):
     # z indica se o brinquedo i está no pacote j, 1 se sim, 0 se não
     z = LpVariable.dicts("no_pacote", ((i,j) for i in range(1, t + 1) for j in range(1, p + 1)), cat=LpBinary)
     
-    # Preenchendo a variável z com base nos dados
     for i in range(1, t + 1):
         for j in range(1, p + 1):
             z[i, j].value = 0  # Inicialmente, nenhum brinquedo está no pacote
