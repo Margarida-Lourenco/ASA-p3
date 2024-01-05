@@ -55,8 +55,7 @@ def maximizar_lucro(t, p, max_brinquedos, brinquedos, pacotes):
 
 ################################################################################
 # Leitura dos dados de entrada
-entrada = input().split()
-t, p, max_brinquedos = map(int, entrada[:3])
+t, p, max_brinquedos = map(int, input().split())
 brinquedos = [tuple(map(int, input().split())) for _ in range(t)]
 pacotes = [tuple(map(int, input().split())) for _ in range(p)]
 
