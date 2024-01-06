@@ -10,7 +10,6 @@ def maximizar_lucro(t, p, max_brinquedos, brinquedos, pacotes):
         if max > brinquedos[i][1]:
             max = brinquedos[i][1]
         xi = LpVariable("brinquedo_" + str(i), 0, max, LpInteger)
-        modelo += xi <= max, "Capacidade_Brinquedo_" + str(i)
         x += [xi]
             
     somas = [0] * (t+1)
